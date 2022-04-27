@@ -5,7 +5,7 @@
 }
 
 header{
-    height: 85vh;
+    height: 87vh;
     width: 250px;
     background-color: black;
     position: fixed;
@@ -18,7 +18,7 @@ body{
 }
 
 footer{
-    height: 15vh;
+    height: 13vh;
     width: 100%;
     background-color: #181818;
     border-top: 1px solid #24282a;
@@ -194,7 +194,7 @@ img{
 }
 
 .footer__top div{
-    padding: 20px 10px;
+    padding: 20px 10px 5px 10px;
 }
 
 .line{
