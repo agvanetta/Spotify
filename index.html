@@ -5,15 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css/style.css" rel="stylesheet">
+  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/800px-Spotify_logo_without_text.svg.png" />
   
-  <title>Spotify</title>
+  <title>SpotifyClone</title>
 </head>
 <body>
     <header>
         <div class="header__container">
             <div class="header__logo">
-                <a href="https://www.linkedin.com/in/agustin-vanetta-549645185/" class="linkedin" target="_blank"><i
-              class="bx bxl-linkedin"></i></a>
                 <img class="header__logo__img" src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_White.png" alt="logo"/>
             </div>
             <div class="header__menu">
@@ -58,6 +57,42 @@
                 </div>
                 
             </div>
+            <div id="decoration" class="title">Buenas noches</div>
+            <div class="title">Artistas más escuchados</div>
+            <div class="body__canciones">
+                <div class="card">
+                    <div class="card__image"> <img class="card__image__circulo" class="img" 
+                        src="https://i.scdn.co/image/ab6761610000e5eba8d1d46523149557e9df850f" alt="paulo"></div>
+                    <div class="card__name">Paulo Londa</div>
+                    <div class="card__artist">Artista</div>
+                </div>
+                <div class="card">
+                    <div class="card__image"> <img class="card__image__circulo" 
+                        src="data:image/jpeg;base64,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" alt="lit"></div>
+                    <div class="card__name">Duki</div>
+                    <div class="card__artist">Artista</div>
+                </div>
+                <div class="card">
+                    <div class="card__image"> <img class="card__image__circulo" 
+                        src="https://i0.wp.com/lacapitaldelsol.com/wp-content/uploads/2021/06/unnamed-43.jpg?fit=1180%2C1181&ssl=1" alt="becerra"></div>
+                    <div class="card__name">Maria Becerra</div>
+                    <div class="card__artist">Artista</div>
+                </div>
+                <div class="card">
+                    <div class="card__image"> <img class="card__image__circulo" 
+                        src="https://i.scdn.co/image/ab6761610000e5ebc4339841ed995cedbc0cff4e" alt="yatra"></div>
+                    <div class="card__name">Nicki Nicole</div>
+                    <div class="card__artist">Artista</div>
+                </div>
+                <div class="card">
+                    <div class="card__image"><img class="card__image__circulo" 
+                        src="https://pxb.cdn.ciudadano.news/ciudadano/072021/1625332982340/l-gante-cristina.jpg?cw=900&ch=900" alt="morat"></div>
+                    <div class="card__name">L-Gante</div>
+                    <div class="card__artist">Artista</div>
+                </div>
+            </div>
+
+
             <div class="title">Top five Canciones</div>
             <div class="body__canciones">
                 <div class="card">
@@ -85,6 +120,12 @@
                     <div class="card__name">Idiota</div>
                     <div class="card__artist">Morat, Danna Paola</div>
                 </div>
+            </div>
+
+            <div class="body__banner">
+            <img    id="banner"
+            src="./Lleva_banner.png" 
+            alt="banner">
             </div>
 
             <div class="title">Top five Podcast</div>
@@ -119,7 +160,8 @@
     </body>
     <footer>
         <div class="footer">
-            <div class="footer__top">
+           
+            <!-- <div class="footer__top">
                 <div><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-shuffle" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M0 3.5A.5.5 0 0 1 .5 3H1c2.202 0 3.827 1.24 4.874 2.418.49.552.865 1.102 1.126 1.532.26-.43.636-.98 1.126-1.532C9.173 4.24 10.798 3 13 3v1c-1.798 0-3.173 1.01-4.126 2.082A9.624 9.624 0 0 0 7.556 8a9.624 9.624 0 0 0 1.317 1.918C9.828 10.99 11.204 12 13 12v1c-2.202 0-3.827-1.24-4.874-2.418A10.595 10.595 0 0 1 7 9.05c-.26.43-.636.98-1.126 1.532C4.827 11.76 3.202 13 1 13H.5a.5.5 0 0 1 0-1H1c1.798 0 3.173-1.01 4.126-2.082A9.624 9.624 0 0 0 6.444 8a9.624 9.624 0 0 0-1.317-1.918C4.172 5.01 2.796 4 1 4H.5a.5.5 0 0 1-.5-.5z"/>
                     <path d="M13 5.466V1.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192zm0 9v-3.932a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192z"/>
@@ -134,16 +176,39 @@
                 <div><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-skip-end-fill" viewBox="0 0 16 16">
                     <path d="M12.5 4a.5.5 0 0 0-1 0v3.248L5.233 3.612C4.693 3.3 4 3.678 4 4.308v7.384c0 .63.692 1.01 1.233.697L11.5 8.753V12a.5.5 0 0 0 1 0V4z"/>
                   </svg></div>
-                <div><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-repeat" viewBox="0 0 16 16">
+                <div><svg xmlns="http://www.w3.org/2000/svg"  width="25" height="25" fill="currentColor" class="bi bi-arrow-repeat" viewBox="0 0 16 16">
                     <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z"/>
                     <path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z"/>
                   </svg></div>
+            </div> -->
+            <div class="footer__left">
+                <h1>Paulo Londra: Bzrp Music Sessions, Vol. 23</h1>
+                <h2>Bizzarap, Paulo Londra</h2>
             </div>
-
             <div class="footer__bot">
-                <div class="footer__bot__text">0:00</div>
+                <audio src="./media/test.mp3" controls></audio>
+                <!-- <div class="footer__bot__text">0:00</div>
                 <div class="line"></div>
-                <div class="footer__bot__text">3:40</div>
+                <div class="footer__bot__text">3:40</div> -->
+            </div>
+            <div class="footer__right">
+                <div><svg id="icons" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-headset" viewBox="0 0 16 16">
+                    <path d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5z"/>
+                  </svg></div>
+                <div><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-speaker" viewBox="0 0 16 16">
+                    <path d="M12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h8zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z"/>
+                    <path d="M8 4.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5zM8 6a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 3a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm-3.5 1.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+                  </svg></div>
+                <div><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+                    <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                    <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+                  </svg></div>
+                <div><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-music-note-list" viewBox="0 0 16 16">
+                    <path d="M12 13c0 1.105-1.12 2-2.5 2S7 14.105 7 13s1.12-2 2.5-2 2.5.895 2.5 2z"/>
+                    <path fill-rule="evenodd" d="M12 3v10h-1V3h1z"/>
+                    <path d="M11 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 16 2.22V4l-5 1V2.82z"/>
+                    <path fill-rule="evenodd" d="M0 11.5a.5.5 0 0 1 .5-.5H4a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 .5 7H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 .5 3H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5z"/>
+                  </svg></div>
             </div>
         </div>
     </footer>
